@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Extra: Carlos trabalha na empresa JWC e recebeu o contracheque do seu primeiro salário. Esse é o primeiro emprego de carteira assinada dele e ele não entendeu muito bem os descontos. Amanda, a gerente de RH, explicou quais eram os descontos que foram deduzidos do salário. Como podemos ajudar Amanda a automatizar esse processo?
+        // Faça um programa onde a Amanda digitará o salário bruto do funcionário e o programa escreverá, na tela, o nome do funcionário, o valor que será descontado de vale transporte (6%), de INSS (no momento descontar 8%) e quanto sobrará de salário líquido.
+        // *Cada informação deverá ser exibida em uma linha.
+        let nomeFuncionario = prompt("Digite o nome do funcionário: ");
+        let salarioFuncionario = parseFloat(prompt("Digite o salário do funcionário"));
+        let taxaValeTransporte = 0.06;
+        let taxaInssFuncionario = 0.08;
+        let valeTranporteFuncionario = salarioFuncionario * taxaValeTransporte;
+        let inssDoFuncionario = salarioFuncionario * taxaInssFuncionario;
+        let salarioLiquido = salarioFuncionario - valeTranporteFuncionario - inssDoFuncionario;
+
+        // document.write("O funcionário " + nomeFuncionario + " teve um desconto de VT de R$" + valeTranporteFuncionario + " e o desconto de inss foi de R$" + inssDoFuncionario + ". O salário líquido é de R$" + salarioLiquido);
+
+        document.write("Dados do funcionário: " + nomeFuncionario);
+        document.write("<br>");
+        document.write("Desconto VT: R$" + valeTranporteFuncionario);
+        document.write("<br>");
+        document.write("Desconto INSS: R$" + inssDoFuncionario);
+        document.write("<br>");
+        document.write("Salário Líquido: R$" + salarioLiquido);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
